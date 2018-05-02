@@ -1,7 +1,8 @@
 # Mission to Mars
 
-## Setup
+## Setup (on Mac)
 
+```bash
 conda install -c anaconda flask 
 conda install -c anaconda beautifulsoup4 
 conda install -c anaconda pymongo 
@@ -9,7 +10,7 @@ pip install splinter (Conda does not work)
 conda install -c conda-forge selenium 
 brew cask install chromedriver
 brew install geckodriver
-
+```
 
 ![mission_to_mars](Images/mission_to_mars.jpg)
 
