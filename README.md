@@ -1,6 +1,6 @@
 # Mission to Mars
 
-[Instructions](https://github.com/RutgersCodingBootcamp/RUTSOM201801DATA5-Class-Repository-DATA/tree/master/13-Web-Scraping-and-Document-Databases/2-homework/Instructions#step-1---scraping)
+[Instructions](https://github.com/RutgersCodingBootcamp/RUTSOM201801DATA5-Class-Repository-DATA)
 
 ## Setup
 
