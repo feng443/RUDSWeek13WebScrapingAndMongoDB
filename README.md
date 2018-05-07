@@ -35,7 +35,7 @@ python app.py
 In debugging Flask app, it is useful to let server restart when files are changes to avoid manual reload. 
 Change to app.py are tracked automatically but not for other files. So added following:
 
-```python```
+```python
     app.run(
         debug=True,
         extra_files=[
@@ -43,9 +43,8 @@ Change to app.py are tracked automatically but not for other files. So added fol
            './templates/index.html',
            './mars_scrapper.py'
         ]
-```buildoutcfg
-
 ```
+
 ## Copyright
 
 Coding Boot Camp © 2017. All Rights Reserved.
