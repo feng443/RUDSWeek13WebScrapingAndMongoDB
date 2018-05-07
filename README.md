@@ -24,11 +24,13 @@
   * css/
     * [style.css](static/css/style.css)
 
-## Execution 
+## Execution and Testing
 
 ```bash
 python app.py
 ```
+
+Then visit http://127.0.0.1:5000/
 
 ### Some Tricks
 
@@ -44,6 +46,10 @@ Change to app.py are tracked automatically but not for other files. So added fol
            './mars_scrapper.py'
         ]
 ```
+
+Another trick is change of styleshett does not show up even after reloading the main page http://127.0.0.1:5000/.
+In this case, open a seperate brower tab and reload http://127.0.0.1:5000/static/css/style.css, 
+then reload the main page.
 
 ## Copyright
 
