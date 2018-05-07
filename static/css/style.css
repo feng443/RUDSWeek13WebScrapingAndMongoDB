@@ -1,3 +1,22 @@
 img {
     max-width: 100%;
 }
+
+#featured_mars_image{
+    padding: 20px;
+}
+
+#weather {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #CCC;
+}
+
+#hemisphere {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #CCC;
+    padding: 5px;
+}

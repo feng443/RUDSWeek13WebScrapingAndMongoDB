@@ -14,7 +14,7 @@ from splinter import Browser
 
 def get_mars_news():
     url = 'https://mars.nasa.gov/news/'
-    with Browser('chrome') as browser:
+    with Browser('chrome', headless=False) as browser:
         browser.visit(url)
         time.sleep(1)
         html = browser.html
@@ -26,7 +26,7 @@ def get_mars_news():
 def get_feature_image_url():
     base_url = 'https://www.jpl.nasa.gov/'
     url = f'{base_url}/spaceimages/?search=&category=Mars'
-    with Browser('chrome') as browser:
+    with Browser('chrome', headless=False) as browser:
         browser.visit(url)
         time.sleep(1)
         browser.click_link_by_id('full_image')
@@ -56,7 +56,7 @@ def get_mars_hemispheres():
     base_url = 'https://astrogeology.usgs.gov'
     url = f'{base_url}/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
     hemisphere_image_urls = []
-    with Browser('chrome') as browser:
+    with Browser('chrome', headless=False) as browser:
         browser.visit(url)
         time.sleep(1)
         for item in bs4(browser.html, 'lxml').find_all('div', class_='item'):

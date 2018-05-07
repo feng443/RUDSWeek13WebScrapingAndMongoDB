@@ -27,4 +27,11 @@ def scrape():
     return redirect('http://localhost:5000/', code=302)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(
+        debug=True,
+        extra_files=[
+           './static/css/style.css',
+           './templates/index.html',
+           './mars_scrapper.py',
+        ]
+    )
