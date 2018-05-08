@@ -8,7 +8,7 @@ This file provide web app functionality
 
 from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
-from mars_scrapper import get_mission_to_mars_info
+from scrape_mars import scrape
 
 app = Flask(__name__)
 mongo = PyMongo(app)
@@ -18,10 +18,10 @@ def index():
     return render_template('index.html', data=mongo.db.mission_to_mars.find_one())
 
 @app.route('/scrape')
-def scrape():
+def scrape_and_save(): # Using scrape() causes infinite loop!
     mongo.db.mission_to_mars.update(
         {},
-        get_mission_to_mars_info(),
+        scrape(),
         upsert=True
     )
     return redirect('http://localhost:5000/', code=302)
@@ -32,6 +32,6 @@ if __name__ == '__main__':
         extra_files=[
            './static/css/style.css',
            './templates/index.html',
-           './mars_scrapper.py',
+           './scrape_mars.py',
         ]
     )

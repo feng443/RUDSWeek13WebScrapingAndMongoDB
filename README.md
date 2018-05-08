@@ -17,7 +17,7 @@
 * [requirements.txt](requirements.txt)
 * [mission_to_mars.ipynb](mission_to_mars.ipynb)
 * [app.py](app.py)
-* [mars_scrapper.py](mars_scrapper.py)
+* [mars_scrapper.py](scrape_mars.py)
 * templates/
   * [index.html](templates/index.html)
 * static/
@@ -43,8 +43,9 @@ Change to app.py are tracked automatically but not for other files. So added fol
         extra_files=[
            './static/css/style.css',
            './templates/index.html',
-           './mars_scrapper.py'
+           './scrape_mars.py',
         ]
+    )
 ```
 
 Another trick is change of styleshett does not show up even after reloading the main page http://127.0.0.1:5000/.

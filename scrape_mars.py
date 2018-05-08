@@ -72,7 +72,7 @@ def get_mars_hemispheres():
 
     return hemisphere_image_urls
 
-def get_mission_to_mars_info():
+def scrape():
     (news_title, news_p) = get_mars_news()
     return dict(
         news_title=news_title,
